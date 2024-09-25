@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="/static/styles.css"> <!-- Link para o CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciamento de Livros</h1>
+
+        <h2>Listar Livros</h2>
+        <button onclick="listarLivros()">Listar Todos os Livros</button>
+        <ul id="livros-lista"></ul>
+
+        <h2>Adicionar Livro</h2>
+        <input type="number" id="codigo" placeholder="Código (números)" min="1" required>
+        <input type="text" id="titulo" placeholder="Título">
+        <input type="text" id="autor" placeholder="Autor">
+        <button onclick="adicionarLivro()">Adicionar Livro</button>
+        <p id="adicionar-mensagem"></p>
+
+        <h2>Deletar Livro</h2>
+        <input type="number" id="codigo-deletar" placeholder="Código">
+        <button onclick="deletarLivro()">Deletar Livro</button>
+        <p id="deletar-mensagem"></p>
+    </div>
+
+    <script src="/static/app.js"></script> <!-- Importando o arquivo JavaScript -->
+</body>
+</html>
